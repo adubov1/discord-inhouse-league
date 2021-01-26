@@ -4,9 +4,9 @@ const environments = {
 };
 
 const cfg = {
-    discordToken: '',
-    graphcoolId: '',
-    graphcoolToken: '',
+    discordToken: process.env.DISCORD_TOKEN,
+    graphcoolId: process.env.GRAPHCOOL_ID,
+    graphcoolToken: process.env.GRAPHCOOL_TOKEN,
     environment: environments.production,
     server: {
         development: 'Test Server',
